@@ -4,4 +4,8 @@
     <select id="getUserById" resultType="com.missionsky.smarteng.model.User">
         select * from user where user_id = #{userId}
     </select>
+
+    <select id="getUsers" resultType="com.missionsky.smarteng.model.User">
+        select * from user
+    </select>
 </mapper>

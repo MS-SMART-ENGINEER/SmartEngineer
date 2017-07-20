@@ -5,6 +5,8 @@ import com.missionsky.smarteng.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class HelloService {
 
@@ -28,4 +30,6 @@ public class HelloService {
     public User getUser(String userId) {
         return userMapper.getUserById(userId);
     }
+
+    public List<User> getUsers(){return userMapper.getUsers();}
 }
