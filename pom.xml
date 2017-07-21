@@ -70,10 +70,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+				<!--
                 <configuration>
-                    <!-- fork配置为true才能使spring boot devtool在每次代码更新后restart -->
                     <fork>true</fork>
                 </configuration>
+				-->
             </plugin>
         </plugins>
     </build>
